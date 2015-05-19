@@ -11,7 +11,7 @@ Thanks @matthiask
     :local:
 
 Installation
-------------
+============
 
 .. code-block:: bash
 
@@ -23,6 +23,9 @@ or as leonardo bundle
 
     pip install django-leonardo["oembed"]
 
+Configuration
+=============
+
 Add ``leonardo_module_oembed`` to APPS list, in the ``local_settings.py``::
 
     APPS = [
@@ -32,6 +35,7 @@ Add ``leonardo_module_oembed`` to APPS list, in the ``local_settings.py``::
     ]
 
 Sync static
+-----------
 
 .. code-block:: bash
 
@@ -59,7 +63,7 @@ callable::
 
 
 Read More
----------
+=========
 
 * https://github.com/feincms/feincms-oembed
 * https://github.com/django-leonardo/django-leonardo
