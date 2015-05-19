@@ -6,13 +6,13 @@ from leonardo.module.web.models import Widget
 from django.template.loader import render_to_string
 
 
-class FeedWidget(FeedContent, Widget):
+class FeedWidget(Widget, FeedContent):
 
     def render_content(self, options):
 
         return render_to_string(
             self.get_template, {
-                'content': self.feed, 'widget': self,
+                'feed': self.feed, 'widget': self,
                 'request': options.get('request')
                 })
 
