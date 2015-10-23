@@ -3,7 +3,9 @@
 {% load i18n feincms_tags %}
 
 {% block content %}
-<p>
-    {{ content.html|safe }}
-</p><!-- last update: {{ response.modified }} -->
+<div class="embed-responsive embed-responsive-16by9">
+  <div class="embed-responsive-item">
+  	{{ content.html|safe }}
+  </div>
+</div>
 {% endblock %}
