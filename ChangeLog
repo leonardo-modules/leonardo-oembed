@@ -1,6 +1,10 @@
 CHANGES
 =======
 
+* Change import paths
+* fix render external feed
+* add meta
+
 2015.10.0
 ---------
 
