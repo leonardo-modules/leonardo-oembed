@@ -2,9 +2,6 @@
 from django.apps import AppConfig
 from django.utils.translation import ugettext_lazy as _
 
-from .widget import *
-
-
 default_app_config = 'leonardo_oembed.Config'
 
 
@@ -18,8 +15,8 @@ class Default(object):
     ]
 
     widgets = [
-        OembedWidget,
-        FeedWidget
+        'leonardo_oembed.models.OembedWidget',
+        'leonardo_oembed.models.FeedWidget'
     ]
 
     config = {
