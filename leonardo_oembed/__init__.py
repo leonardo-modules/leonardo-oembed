@@ -13,7 +13,7 @@ class Default(object):
 
     optgroup = 'Oembed'
 
-    if 'leonardo_module_redirects' in APPS:
+    if 'leonardo_oembed' in APPS:
         apps = [
             'feincms_oembed',
             'leonardo_oembed',
